@@ -1,7 +1,7 @@
-Step 1: Compile each .c file with -fPIC flag to create object file:
-  >> ~/dynamiclib$ gcc -c -Wall -fPIC *.c
+Step 1: Compile each .c file with -fPIC flag to create object file: 
+  `>> ~/dynamiclib$ gcc -c -Wall -fPIC *.c`
 Step 2: Produce a shared object which can then be linked with other objects 
-  >> ~/dynamiclib$ gcc -shared *.o -o libmath.so
+  `>> ~/dynamiclib$ gcc -shared *.o -o libmath.so`
 
 Option: 
   -Wall: include warnings. See man page for warnings specified.
