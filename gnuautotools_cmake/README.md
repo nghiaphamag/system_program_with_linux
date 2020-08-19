@@ -7,7 +7,20 @@ All Step:
 	configure.ac --> autoconf    --> configure
 	Makefile.am  --> automake    --> Makefile.in
 	Makefile.in  --> ./configure --> Makefile
-			 make dist   --> *.tar.gz			
+			 make dist   --> *.tar.gz	
+			 
+Source tree:
+.
+├── configure.ac
+├── Makefile.am
+├── myexe-1.0.tar.gz
+└── src
+    ├── myadd.c
+    ├── mydiv.c
+    ├── mymath.h
+    ├── mymul.c
+    ├── mysub.c
+    └── prog1.c
 </pre>
 
 <pre>
@@ -54,6 +67,27 @@ Step9: Make execute file
 <pre>
 All Step:
 	CMakeLists.txt --> cmake --> "Makefiles and other system required files"
+	
+Source tree:
+.
+├── build
+│   ├── CMakeCache.txt
+│   ├── CMakeFiles
+│   ├── cmake_install.cmake
+│   ├── CPackConfig.cmake
+│   ├── CPackSourceConfig.cmake
+│   ├── Makefile
+│   └── myexe
+├── CMakeLists.txt
+├── include
+│   └── mymath.h
+├── lib
+│   ├── libarifmath.a
+│   └── libarifmath.so
+├── man
+│   └── myadd.3
+└── src
+    └── prog1.c
 </pre>
 
 <pre>
