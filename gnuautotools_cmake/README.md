@@ -8,7 +8,9 @@ All Step:
 	Makefile.am  --> automake    --> Makefile.in
 	Makefile.in  --> ./configure --> Makefile
 			 make dist   --> *.tar.gz			
+</pre>
 
+<pre>
 Step1: Install Package
   Automake (GNU automake) 1.15.1
 	>> gnuautotools/ex1$ sudo apt-get install automake
