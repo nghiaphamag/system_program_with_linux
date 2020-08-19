@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/mymath.h
+
+/home/neko/Project/system_program_with_linux/gnuautotools_cmake/cmake/ex1/src/prog1.c
+stdio.h
+-
+mymath.h
+-
+

@@ -1,0 +1,1 @@
+/usr/bin/cc    CMakeFiles/myexe.dir/src/prog1.c.o  -o myexe  -L/home/neko/Project/system_program_with_linux/gnuautotools_cmake/cmake/ex1/lib -Wl,-rpath,/home/neko/Project/system_program_with_linux/gnuautotools_cmake/cmake/ex1/lib: -lc -Wl,-Bstatic -larifmath -Wl,-Bdynamic 

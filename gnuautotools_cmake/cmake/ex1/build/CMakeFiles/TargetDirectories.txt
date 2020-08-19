@@ -1,0 +1,9 @@
+/home/neko/Project/system_program_with_linux/gnuautotools_cmake/cmake/ex1/build/CMakeFiles/install/strip.dir
+/home/neko/Project/system_program_with_linux/gnuautotools_cmake/cmake/ex1/build/CMakeFiles/install/local.dir
+/home/neko/Project/system_program_with_linux/gnuautotools_cmake/cmake/ex1/build/CMakeFiles/install.dir
+/home/neko/Project/system_program_with_linux/gnuautotools_cmake/cmake/ex1/build/CMakeFiles/package.dir
+/home/neko/Project/system_program_with_linux/gnuautotools_cmake/cmake/ex1/build/CMakeFiles/package_source.dir
+/home/neko/Project/system_program_with_linux/gnuautotools_cmake/cmake/ex1/build/CMakeFiles/myexe.dir
+/home/neko/Project/system_program_with_linux/gnuautotools_cmake/cmake/ex1/build/CMakeFiles/rebuild_cache.dir
+/home/neko/Project/system_program_with_linux/gnuautotools_cmake/cmake/ex1/build/CMakeFiles/edit_cache.dir
+/home/neko/Project/system_program_with_linux/gnuautotools_cmake/cmake/ex1/build/CMakeFiles/list_install_components.dir
