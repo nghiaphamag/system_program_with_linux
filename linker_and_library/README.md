@@ -23,11 +23,11 @@ Option:
 ```
 #### Step 4: Check info execute file:
 ```shell
-  >> ~/dynamiclib/driver$ file myexe
+  ~/dynamiclib/driver$ file myexe
 ```
 or the shared library dependencies of the executable can be listed with the command:
 ```shell
-  >> ~/dynamiclib/driver$ ldd myexe
+  ~/dynamiclib/driver$ ldd myexe
 ```
 #### Step 5: Run Program
 Set path:
