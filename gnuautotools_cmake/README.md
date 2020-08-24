@@ -1,27 +1,30 @@
 <h2> Create Packaging S/W Using GNU Autotools </h2>
 
 
-<pre>
-All Step:
+
+#### All Step
+```text
 	configure.ac --> aclocal     --> aclocal.m4
 	configure.ac --> autoconf    --> configure
 	Makefile.am  --> automake    --> Makefile.in
 	Makefile.in  --> ./configure --> Makefile
 			 make dist   --> *.tar.gz	
-			 
-Source tree:
-.
-├── configure.ac
-├── Makefile.am
-├── myexe-1.0.tar.gz
-└── src
-    ├── myadd.c
-    ├── mydiv.c
-    ├── mymath.h
-    ├── mymul.c
-    ├── mysub.c
-    └── prog1.c
-</pre>
+```
+
+#### Source Tree
+```text
+	.
+	├── configure.ac
+	├── Makefile.am
+	├── myexe-1.0.tar.gz
+	└── src
+	    ├── myadd.c
+	    ├── mydiv.c
+	    ├── mymath.h
+	    ├── mymul.c
+	    ├── mysub.c
+	    └── prog1.c
+```
 
 
 #### Step 1: Install Package
@@ -34,7 +37,7 @@ gnuautotools/ex1$ sudo apt-get install automake
 gnuautotools/ex1$ sudo apt-get install autoconf
 ```
 
-#### Step 2: Create configure.ac file like that
+#### Step 2: Create configure.ac
 ```text
 	AC_INIT([myexe], [1.0], [nghiaphamsg@gmail.com])
 	AM_INIT_AUTOMAKE
@@ -76,31 +79,33 @@ gnuautotools/ex1$ make
 
 <h2> Create Packaging S/W Using CMAKE </h2>
 
-<pre>
-All Step:
+
+#### All Step
+```text
 	CMakeLists.txt --> cmake --> "Makefiles and other system required files"
-	
-Source tree:
-.
-├── build
-│   ├── CMakeCache.txt
-│   ├── CMakeFiles
-│   ├── cmake_install.cmake
-│   ├── CPackConfig.cmake
-│   ├── CPackSourceConfig.cmake
-│   ├── Makefile
-│   └── myexe
-├── CMakeLists.txt
-├── include
-│   └── mymath.h
-├── lib
-│   ├── libarifmath.a
-│   └── libarifmath.so
-├── man
-│   └── myadd.3
-└── src
-    └── prog1.c
-</pre>
+```	
+#### Source Tree
+```text
+	.
+	├── build
+	│   ├── CMakeCache.txt
+	│   ├── CMakeFiles
+	│   ├── cmake_install.cmake
+	│   ├── CPackConfig.cmake
+	│   ├── CPackSourceConfig.cmake
+	│   ├── Makefile
+	│   └── myexe
+	├── CMakeLists.txt
+	├── include
+	│   └── mymath.h
+	├── lib
+	│   ├── libarifmath.a
+	│   └── libarifmath.so
+	├── man
+	│   └── myadd.3
+	└── src
+	    └── prog1.c
+```
 
 
 #### Step 1: Install Package
@@ -108,7 +113,8 @@ Source tree:
 ```shell
 cmake/ex1$ sudo apt-get install cmake
 ```	
-#### Step 2: Create CMakeLists.txt file like that:
+
+#### Step 2: Create CMakeLists.txt
 ```text
 	cmake_minimum_required (VERSION 3.7)
 	project(ex1_cmakeproject)
