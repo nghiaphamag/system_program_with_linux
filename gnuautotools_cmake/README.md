@@ -23,44 +23,56 @@ Source tree:
     └── prog1.c
 </pre>
 
-<pre>
-Step1: Install Package
+
+#### Step 1: Install Package
   Automake (GNU automake) 1.15.1
-	>> gnuautotools/ex1$ sudo apt-get install automake
-
+```shell
+gnuautotools/ex1$ sudo apt-get install automake
+```
   Autoconf (GNU Autoconf) 2.69
-	>> gnuautotools/ex1$ sudo apt-get install autoconf
+```shell
+gnuautotools/ex1$ sudo apt-get install autoconf
+```
 
-Step2: Create configure.ac file like that
+#### Step 2: Create configure.ac file like that
+```text
 	AC_INIT([myexe], [1.0], [nghiaphamsg@gmail.com])
 	AM_INIT_AUTOMAKE
 	AC_PROG_CC([gcc cl cc])
 	AC_CONFIG_FILES([Makefile])
 	AC_OUTPUT
-
-Step3: Automatic create "aclocal.m4" and "autom4te.cache" by use aclocal command
-	>> gnuautotools/ex1$ aclocal
-
-Step4: Automatic create "configure" by use autoconf command
-        >> gnuautotools/ex1$ autoconf
-
-Step5: Make "Makefile.am"
+```
+#### Step 3 : Automatic create "aclocal.m4" and "autom4te.cache" by use aclocal command
+```shell
+gnuautotools/ex1$ aclocal
+```
+#### Step 4 : Automatic create "configure" by use autoconf command
+```shell
+gnuautotools/ex1$ autoconf
+```
+#### Step 5 : Make "Makefile.am"
+```text
 	AUTOMAKE_OPTIONS=foreign
 	bin_PROGRAMS = myexe
 	myexe_SOURCES = src/myadd.c src/mysub.c src/mymul.c src/mydiv.c src/prog1.c src/mymath.h
-
-Step6: Automatic create "Makefile.in" by use automake command
-	>> gnuautotools/ex1$ automake --add-missing 
-
-Step7: Automatic create "Makefile" by execute configure 
-	>> gnuautotools/ex1$ ./configure
-
-Step8: Generate package with make dist command and check package
-	>> gnuautotools/ex1$ make dist
-	>> gnuautotools/ex1$ make distcheck
-Step9: Make execute file
-	>> gnuautotools/ex1$ make
-</pre>
+```
+#### Step 6: Automatic create "Makefile.in" by use automake command
+```shell
+gnuautotools/ex1$ automake --add-missing 
+```
+#### Step 7: Automatic create "Makefile" by execute configure
+```shell
+gnuautotools/ex1$ ./configure
+```
+#### Step 8: Generate package with make dist command and check package
+```shell
+gnuautotools/ex1$ make dist
+gnuautotools/ex1$ make distcheck
+```
+#### Step 9: Make execute file
+```shell
+gnuautotools/ex1$ make
+```
 
 <h2> Create Packaging S/W Using CMAKE </h2>
 
@@ -90,13 +102,14 @@ Source tree:
     └── prog1.c
 </pre>
 
-<pre>
-Step1: Install Package
-  Cmake version 3.10.2
-	>> cmake/ex1$ sudo apt-get install cmake
-	
-Step2: Create CMakeLists.txt file like that:
 
+#### Step 1: Install Package
+  Cmake version 3.10.2
+```shell
+cmake/ex1$ sudo apt-get install cmake
+```	
+#### Step 2: Create CMakeLists.txt file like that:
+```text
 	cmake_minimum_required (VERSION 3.7)
 	project(ex1_cmakeproject)
 
@@ -118,14 +131,17 @@ Step2: Create CMakeLists.txt file like that:
 	set(CMAKE_C_STANDARD 11)
 	set(CMAKE_C_STANDARD_REQUIRED True)
 	include(CPack)
+```
+#### Step 3: Generate Makefiles and other system required files
+```shell
+cmake/ex1/build$ cmake ../
+```
+#### Step 4: Make execute file
+```shell
+cmake/ex1/build$ make
+```
+#### Step 5: Generate package by use cpack
+```shell
+cmake/ex1/build$ cpack --config CPackSourceConfig.cmake
+```
 
-Step3: Generate Makefiles and other system required files
-	>> cmake/ex1/build$ cmake ../
-
-Step4: Make execute file
-	>> cmake/ex1/build$ make
-	
-Step5: Generate package by use cpack
-	>> cmake/ex1/build$ cpack --config CPackSourceConfig.cmake
-
-</pre>
