@@ -1,8 +1,3 @@
-/*
-*  Video Lecture: 05
-*  Programmer: Arif Butt
-*  Course: System Programming with Linux
-*/
 #include <stdio.h>
 #include "mymath.h"
 

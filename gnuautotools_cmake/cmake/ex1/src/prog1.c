@@ -1,7 +1,3 @@
-/*
-*  Course: System Programming with Linux
-*/
-
 #include <stdio.h>
 #include <mymath.h>
 

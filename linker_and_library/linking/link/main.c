@@ -1,9 +1,3 @@
-/*
-*  Video Lecture: 03
-*  Programmer: Arif Butt
-*  Course: System Programming with Linux
-*/
-
 #include <stdio.h>
 void swap();
 int buf[2] = {1,2};

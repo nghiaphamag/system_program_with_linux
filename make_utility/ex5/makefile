@@ -22,7 +22,7 @@ prog1.o: prog1.c mymath.h ./d1/mymod.h
 include: ./d1/makefile
 
 clean:
-	-@rm -f $(OBJS)
+	-@rm -f $(OBJS) myexe
 
 install: myexe
 	@if [ -d $(INSTDIR) ]; \
